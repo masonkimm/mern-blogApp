@@ -1,0 +1,36 @@
+.TopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(216, 213, 213);
+  position: sticky;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+}
+.TopBar__left,
+.TopBar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+}
+.TopBar__right__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.TopBar__right i {
+  font-size: 18px;
+  cursor: pointer;
+  color: gray;
+}
+
+.TopBar__center {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
