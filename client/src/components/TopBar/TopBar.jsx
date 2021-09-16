@@ -36,19 +36,20 @@ export default function TopBar({ user }) {
             </Link>
           </div>
         )}
-        <Link to="/settings" className="link">
-          {user ? (
+
+        {user ? (
+          <Link to="/settings" className="link">
             <img
               className="TopBar__right__image"
               src="https://bit.ly/3zcHEk9"
               alt=""
             />
-          ) : (
-            <Link to="/register" className="link">
-              Register
-            </Link>
-          )}
-        </Link>
+          </Link>
+        ) : (
+          <Link to="/register" className="link">
+            Register
+          </Link>
+        )}
 
         <i className="fas fa-search"></i>
       </div>
